@@ -1,0 +1,20 @@
+{
+  "name": "mood-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd frontend && pnpm install",
+    "server-install": "cd backend && npm install",
+    "install": "pnpm server-install && pnpm client-install && pnpm i concurrently --save-dev",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && pnpm run dev",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Elton Alcantara",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
