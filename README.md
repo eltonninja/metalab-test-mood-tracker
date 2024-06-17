@@ -18,8 +18,8 @@ To run the application locally using Docker, follow these steps:
 
 1. **Clone the repository:**
     ```sh
-    git clone <repository-url>
-    cd <repository-name>
+    git clone https://github.com/eltonninja/metalab-test-mood-tracker.git
+    cd metalab-test-mood-tracker
     ```
 
 2. **Build and start the Docker containers:**
